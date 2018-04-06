@@ -1,0 +1,28 @@
+{
+  "name": "developer-coding-evaluation",
+  "version": "1.0.0",
+  "description": "Say hello to the Cardinal Solutions coding evaluation. You'll be taking a single page mockup and converting it to HTML, CSS, Javascript. Fork this repository to begin your project. All assets (images, fonts) are included in the project. You're welcome to set up the code and folder structure however you wish. All HTML, CSS, and Javascript must be writen from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamtre9115/developer-coding-evaluation.git"
+  },
+  "author": "Tresean Adam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamtre9115/developer-coding-evaluation/issues"
+  },
+  "homepage": "https://github.com/adamtre9115/developer-coding-evaluation#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-inject": "^4.3.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
