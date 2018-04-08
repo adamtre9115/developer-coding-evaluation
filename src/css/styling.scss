@@ -102,7 +102,8 @@ p, h3  {
     }
     .client {
         text-align: center;
-        border: 1px solid $grayish;        
+        border: 1px solid $grayish;  
+        background-color: $white;      
         margin: 10px 0;              
         padding: 10px;
     }
@@ -203,6 +204,7 @@ p, h3  {
     .chhn-image {
         padding-top: 40px;
         margin: 0px 64px;
+        width: 100%;
     }
 }
 
@@ -269,5 +271,219 @@ footer {
 
     .logo {
         padding: 15px;
+    }
+}
+
+// media queries
+@media (min-width: 768px){
+
+    // head
+    #head {
+        height: 30vh;
+    }
+
+    // categories
+    .cat-wrap {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+
+    // clients
+    #clients .shift-up {
+        margin-top: -10%;
+    }
+
+    .shift-up {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 2%;
+    }
+
+    .bigger-box {
+        grid-column: 1/3
+    }
+
+    // client detail 
+    #client-detail {
+        margin-top: 30px;
+
+        .pg {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: url("../assets/images/pic-gojo-bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 390px;
+        }
+        .pg-inner {
+            background-image: none;
+        }
+
+        .fifth-third {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-image: url("../assets/images/pic-fifththird-bg.png");
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .fifth-inner {
+            background-image: none;
+            order: 2;
+        }
+
+        .fifth-image {
+            margin-top: 30%;
+            transform: scale(1.5);
+        }
+
+        .fifth-detail {
+            margin-top: 25%;
+            padding-left: 50px;
+            text-align: left;
+        }
+        
+        // chhn
+        .chhn {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 300px;
+        }
+
+        .chhn-image{
+            margin: -33px -15px;
+            transform: scale(1.2);
+        }
+
+        .chhn-detail {
+            margin-top: 15%;
+        }
+    }
+
+    // contact 
+    .contact-wrap {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 55% 35%;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    .form {
+        border-right: 1px solid $grayish;
+        padding-right: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 85%;
+    }
+
+    #contact #submit {
+        margin-right: 65%;
+    }
+
+    .details {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #contact iframe {
+        display: initial;
+    }
+    
+    // footer
+    footer {
+        padding: 15px;
+    } 
+    .send-off {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .copyright {
+        justify-self: start;
+    }
+
+    .logos {
+        justify-self: end;
+    }
+}
+
+@media (min-width: 992px){
+    // clients
+    #client-detail {
+        margin-top: 60px;
+    }
+
+    // client-detail 
+    #client-detail .pg {
+        height: 440px;
+    }
+    .pg-inner {
+        margin-top: 2px;
+    }
+    
+    .pg-image {
+        transform: scale(.9);
+    }
+
+    .inner-detail {
+        margin-top: 90px;
+    }
+
+    #client-detail .fifth-third {
+        height: 530px;
+    }
+    // chhn
+    #client-detail .chhn {
+        height: 410px;
+    }
+
+    #client-detail .chhn-image {
+        margin: -28px -15px;
+    }
+}
+
+@media (min-width: 1024px){
+    // client detail
+    #client-detail .pg-inner {
+        margin-top: -9px;
+    }
+}
+
+@media (min-width: 1200px){
+    // clients
+    #clients .shift-up {
+        margin-top: -6%;
+    }
+    // client detail
+    #client-detail .pg {
+        height: 492px;
+    }
+    #client-detail .pg-image{
+        transform: scale(.8);
+    }
+    // chhn
+    #client-detail .chhn-image {
+        margin: -77px -40px;
+        transform: scale(.95);
+    }
+}
+
+@media (min-width: 1366px){
+    #client-detail .pg {
+        height: 560px;
+    }
+
+    // fifth third
+    #client-detail .fifth-image {
+        margin-top: 7%;
+        transform: scale(1.15);
     }
 }
