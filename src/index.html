@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cardinal Solutions Eval</title>
-    
+
     <!-- [htmlclean-protect] -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- [/htmlclean-protect] -->
 </head>
+
 <body>
-    <header>
-        <div class="wrapper">
+    <header id="head">
+        <div class="container">
             <div class="card-logo">
                 <img src="assets/logos/logo-cardinal.png" alt="Cardinal Solutions Logo">
             </div>
@@ -23,9 +25,164 @@
         </div>
     </header>
 
+    <!-- begin categories -->
+    <section id="categories">
+        <div class="container">
+            <div class="category">
+                <div class="cat-img">
+                    <img src="../assets/icons/icon-bi.svg" alt="Nuclear symbol">
+                </div>
+                <h3 class="cat-header">Business Intelligence</h3>
+                <p>We use technology to turn data into knowledge that can help you manage and monitor your business, from anywhere.</p>
+            </div>
+            <div class="category">
+                <div class="cat-img">
+                    <img src="../assets/icons/icon-appdev.svg" alt="Pencil & Ruler">
+                </div>
+                <h3 class="cat-header">App Development</h3>
+                <p>Our mobile specialists work to create rich, easy-to-use consumer or enterprise experiences for iOS, Android.</p>
+            </div>
+            <div class="category last-cat">
+                <div class="cat-img">
+                    <img src="../assets/icons/icon-ba.svg" alt="Thinking bulb">
+                </div>
+                <h3 class="cat-header">Business Analysis</h3>
+                <p>Great strategy begins with listening. We learn about businesses from the inside out, and then propose improvements.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end categories -->
+
+    <!-- begin clients -->
+    <section id="clients">
+        <div class="container shift-up">
+            <div id="client-head" class="client">
+                <h3>Our Clients</h3>
+                <p>Over the years, our team has had the distinction of working with a variety of brands in different industries.
+                    Here is a short list of some of the names we have worked with.</p>
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-fifththird.png" alt="Logo of Fifth Third Band">
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-chhn.png" alt="Logo of the Christ Hospital Health Network">
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-chs.png" alt="Logo of Carolinas HealthCare System">
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-skanska.png" alt="Logo of Skanska">
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-p&g.png" alt="Logo of P&G">
+            </div>
+            <div class="client">
+                <img class="client-img" src="../assets/logos/logo-rackroom.png" alt="Logo of Rack Room Shoes">
+            </div>
+
+        </div>
+    </section>
+    <!-- end clients -->
+
+    <!-- begin client detail -->
+    <section id="client-detail">
+        <div class="pg">
+            <div class="pg-inner">
+                <img class="pg-image" src="../assets/images/pic-gojo.png" alt="P&G image">
+            </div>
+            <div class="inner-detail">
+                <div class="container">
+                    <h3>Gojo</h3>
+                    <p>INTERNET OF THINGS</p>
+
+                    <p class="detail">Reducing the spread of hospital infections with the Internet of Things.</p>
+
+                    <a class="detail-button" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="fifth-third">
+            <div class="fifth-inner">
+                <img class="pg-image fifth-image" src="../assets/images/pic-fifththird.png" alt="Image of mobile phone">
+            </div>
+            <div class="fifth-detail">
+                <div class="container">
+                    <h3>Fifth Third Bank </h3>
+                    <p>MOBILE APP</p>
+
+                    <p class="detail">Reimagine what a mobile banking experience should be, focusing on the user rather than the technology.</p>
+
+                    <a class="detail-button" href="#">View App</a>
+                </div>
+            </div>
+        </div>
+        <!-- end fifth-third -->
+        <!-- begin chhn -->
+        <div class="chhn">
+            <div class="fifth-inner">
+                <img class="pg-image chhn-image" src="../assets/images/pic-chhn.png" alt="Image of mobile phone">
+            </div>
+            <div class="chhn-detail">
+                <div class="container">
+                    <h3>The Christ Hospital Health Network</h3>
+                    <p>DIGITAL PLATFORM</p>
+
+                    <p class="detail">A digital front door to the finest patient experiences.</p>
+
+                    <a class="detail-button" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- end chhn -->
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h3>Connect With Us</h3>
+            <p>Have a question or just want to chat?</p>
+            <p>Get in touch.</p>
+
+            <form action="#">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <button id="submit" type="submit">Submit</button>
+                <hr/>
+            </form>
+        </div>
+
+        <h4>For inquiries, please contact:</h4>
+        <p>Tracy Thompson</p>
+        <p>tthompson@cardinalsolutions.com</p>
+        <p class="tel">704.936.4444</p>
+
+        <h4>Come by our office</h4>
+        <p>222 S. Church St. Suite 500,</p>
+        <p>Charlotte, NC 28202</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.1717612798216!2d-80.84846278512808!3d35.227094080302656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a02eff014e21%3A0x74774195387d4fd6!2sCardinal+Solutions+Group!5e0!3m2!1sen!2sus!4v1523152551916"
+            width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <a id="parking" href="#">Find parking on our map!</a>
+    </section>
+    <footer>
+        <div class="container">
+            &copy;2018 Cardinal Solutions. All rights reserved.
+
+            <div class="logos">
+                <img class="logo" src="../assets/icons/icon-twitter.svg" alt="Twitter Logo">
+                <img class="logo" src="../assets/icons/icon-facebook.svg" alt="Facebook Logo">
+                <img class="logo" src="../assets/icons/icon-g+.svg" alt="Google Plus Logo">
+            </div>
+        </div>
+    </footer>
+    <!-- end client detail -->
     <!-- [htmlclean-protect] -->
     <!-- inject:js -->
     <!-- endinject -->
     <!-- [/htmlclean-protect] -->
 </body>
+
 </html>
