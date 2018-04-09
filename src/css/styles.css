@@ -16,11 +16,27 @@ p, h3 {
   margin: 0;
   padding: 10px; }
 
+iframe,
+#parking,
+.cat-wrap,
+.shift-up,
+.pg,
+.fifth-third,
+.chhn,
+.contact-wrap,
+.send-off {
+  display: grid; }
+
 #head {
   background-image: url("../assets/images/pic-hero.png");
   background-size: cover;
   background-position: right center;
   height: 50vh; }
+  #head h2 {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px; }
+  #head .break {
+    display: block; }
 
 .container {
   width: 100%;
@@ -41,12 +57,19 @@ p, h3 {
   font-size: 1.7rem;
   color: #fff; }
 
+a {
+  text-decoration: none; }
+
 #categories {
   background-color: #f0f0f0; }
 
 .category {
   text-align: center;
   padding-top: 25px; }
+
+.cat-img {
+  display: block;
+  margin: 0 auto; }
 
 .category p {
   color: #707070; }
@@ -58,7 +81,7 @@ p, h3 {
   padding-bottom: 120px; }
 
 #clients {
-  background-color: #fafafb;
+  background-color: #fff;
   padding: 1px; }
   #clients #client-head {
     text-align: center;
@@ -74,9 +97,15 @@ p, h3 {
     margin: 10px 0;
     padding: 10px; }
   #clients .client-img {
-    margin: 10px;
     padding: 0px;
-    width: 40%; }
+    margin: 0;
+    height: 80px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain; }
+
+#client-detail h3 {
+  font-size: 1.5rem; }
 
 .pg,
 .fifth-third {
@@ -98,7 +127,7 @@ p, h3 {
   width: 95%; }
 
 .inner-detail {
-  margin-top: 50px; }
+  margin: 40px 0px; }
 
 .inner-detail h3,
 .inner-detail p {
@@ -116,18 +145,23 @@ p, h3 {
   color: #fff;
   text-decoration: none; }
 
+.detail-button:hover,
+#contact #submit:hover {
+  background-color: #fff;
+  color: #0586d3;
+  border: 1px solid #0586d3;
+  transition: .3s; }
+
 .fifth-third {
-  background-color: #304250;
+  background-image: url("../assets/images/pic-fifththird-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 700px; }
   .fifth-third .fifth-image {
     margin-top: 50px;
     width: 100%; }
-  .fifth-third .fifth-inner {
-    background-image: url("../assets/images/pic-fifththird-bg.png");
-    background-size: cover;
-    height: 100%; }
   .fifth-third .fifth-detail {
-    margin-top: -90%;
+    margin-top: -20%;
     text-align: center;
     color: #fff; }
 
@@ -140,6 +174,13 @@ p, h3 {
 .fifth-detail .detail-button {
   color: #18203b;
   background-color: #fff; }
+
+.chhn-detail .detail-button:hover,
+.fifth-detail .detail-button:hover {
+  color: #fff;
+  background-color: #18203b;
+  border: 1px solid #fff;
+  transition: .3s; }
 
 .chhn {
   background: url("../assets/images/pic-chhn-bg.png");
@@ -177,7 +218,6 @@ p, h3 {
     width: 55%;
     color: #707070; }
   #contact iframe {
-    display: grid;
     margin: 0 auto;
     border: 1px solid #707070;
     border-radius: 5px;
@@ -188,7 +228,6 @@ p, h3 {
   #contact .tel {
     color: #18203b; }
   #contact #parking {
-    display: grid;
     padding-bottom: 40px; }
 
 footer {
@@ -196,26 +235,47 @@ footer {
   padding: 25px;
   text-align: center;
   font-size: 14px; }
+  footer p {
+    font-size: .8rem; }
   footer .logo {
     padding: 15px; }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px; }
+
   #head {
-    height: 30vh; }
+    height: 35vh; }
+    #head .card-logo {
+      text-align: left; }
+    #head h2 {
+      font-size: 2rem; }
 
   .cat-wrap {
-    display: grid;
     grid-template-columns: 30% 30% 30%;
-    justify-content: center; }
+    justify-content: space-between; }
+
+  .cat-img {
+    float: left;
+    padding-right: 10px; }
+
+  .category {
+    text-align: left; }
+
+  .category p {
+    padding-left: 20%; }
 
   #clients .shift-up {
     margin-top: -10%; }
 
   .shift-up {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     grid-gap: 2%; }
+
+  #clients #client-head {
+    text-align: left;
+    padding: 15px; }
 
   .bigger-box {
     grid-column: 1/3; }
@@ -223,7 +283,6 @@ footer {
   #client-detail {
     margin-top: 30px; }
     #client-detail .pg {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       background-image: url("../assets/images/pic-gojo-bg.png");
       background-repeat: no-repeat;
@@ -232,7 +291,6 @@ footer {
     #client-detail .pg-inner {
       background-image: none; }
     #client-detail .fifth-third {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       background-image: url("../assets/images/pic-fifththird-bg.png");
       height: 400px;
@@ -248,7 +306,6 @@ footer {
       padding-left: 50px;
       text-align: left; }
     #client-detail .chhn {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       height: 300px; }
     #client-detail .chhn-image {
@@ -257,9 +314,11 @@ footer {
     #client-detail .chhn-detail {
       margin-top: 15%; }
 
+  #contact {
+    margin-bottom: -30px; }
+
   .contact-wrap {
     padding: 5%;
-    display: grid;
     grid-template-columns: 55% 35%; }
 
   hr {
@@ -281,14 +340,17 @@ footer {
     text-align: left;
     padding-left: 10px; }
 
+  .details p {
+    line-height: .7; }
+
   #contact iframe {
-    display: initial; }
+    display: initial;
+    margin-top: 15px; }
 
   footer {
     padding: 15px; }
 
   .send-off {
-    display: grid;
     grid-template-columns: 70% 30%; }
 
   .copyright {
@@ -297,6 +359,18 @@ footer {
   .logos {
     justify-self: end; } }
 @media (min-width: 992px) {
+  .container {
+    max-width: 960px; }
+
+  #head {
+    height: 40vh; }
+
+  .category p {
+    padding-left: 15%; }
+
+  #clients .client-img {
+    height: 142px; }
+
   #client-detail {
     margin-top: 60px; }
 
@@ -319,11 +393,32 @@ footer {
     height: 410px; }
 
   #client-detail .chhn-image {
-    margin: -28px -15px; } }
+    margin: -28px -15px; }
+
+  #contact #submit {
+    margin-right: 73%; } }
 @media (min-width: 1024px) {
+  #head {
+    height: 45vh; }
+
   #client-detail .pg-inner {
-    margin-top: -9px; } }
+    margin-top: -9px; }
+
+  .category p {
+    padding-left: 14%; } }
 @media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; }
+
+  #head {
+    height: 50vh; }
+
+  .card-logo {
+    padding-top: 50px; }
+
+  .category p {
+    padding-left: 15%; }
+
   #clients .shift-up {
     margin-top: -6%; }
 
@@ -335,8 +430,20 @@ footer {
 
   #client-detail .chhn-image {
     margin: -77px -40px;
-    transform: scale(0.95); } }
+    transform: scale(0.95); }
+
+  #contact #submit {
+    margin-right: 77%; } }
 @media (min-width: 1366px) {
+  #head {
+    height: 60vh; }
+
+  .category p {
+    padding-left: 12%; }
+
+  #clients .client-img {
+    height: 142px; }
+
   #client-detail .pg {
     height: 560px; }
 
