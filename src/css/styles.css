@@ -12,7 +12,8 @@ body,
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-p, h3 {
+p,
+h3 {
   margin: 0;
   padding: 10px; }
 
@@ -150,7 +151,7 @@ a {
   background-color: #fff;
   color: #0586d3;
   border: 1px solid #0586d3;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .fifth-third {
   background-image: url("../assets/images/pic-fifththird-bg.png");
@@ -180,7 +181,7 @@ a {
   color: #fff;
   background-color: #18203b;
   border: 1px solid #fff;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .chhn {
   background: url("../assets/images/pic-chhn-bg.png");
@@ -236,7 +237,7 @@ footer {
   text-align: center;
   font-size: 14px; }
   footer p {
-    font-size: .8rem; }
+    font-size: 0.8rem; }
   footer .logo {
     padding: 15px; }
 
@@ -341,7 +342,7 @@ footer {
     padding-left: 10px; }
 
   .details p {
-    line-height: .7; }
+    line-height: 0.7; }
 
   #contact iframe {
     display: initial;
