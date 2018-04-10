@@ -108,6 +108,9 @@ a {
 #client-detail h3 {
   font-size: 1.5rem; }
 
+#client-detail p {
+  line-height: 1.5; }
+
 .pg,
 .fifth-third {
   padding: 1px; }
@@ -268,6 +271,9 @@ footer {
 
   #clients .shift-up {
     margin-top: -10%; }
+
+  .breakTwo {
+    display: block; }
 
   .shift-up {
     grid-template-columns: 1fr 1fr 1fr 1fr;
