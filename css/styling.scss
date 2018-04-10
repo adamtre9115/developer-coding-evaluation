@@ -351,6 +351,41 @@ footer {
     }
   }
 
+  @media (min-width: 740px) and (orientation: landscape){
+    #head {
+        height: 65vh;
+    }
+
+    // #clients
+    #clients .shift-up {
+        margin-top: -10%;
+    }
+
+    // client-detail
+    .pg-image {
+        width: 50%;
+    }
+    .pg-inner,
+    .inner-detail,
+    .fifth-inner {
+        text-align: center;
+    }
+    
+    .inner-detail {
+        padding-top: 20px;
+    }
+
+    .fifth-third .fifth-image {
+        width: 60%;
+    }
+
+    .chhn .chhn-image {
+        margin: 0% 49%;
+        width: 60%;
+    }
+  }
+
+//   tablet sizing
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -523,7 +558,7 @@ footer {
   }
 }
 
-@media (max-width: 823px) and (orientation: landscape){
+@media (min-width: 823px) and (orientation: landscape){
     #head {
         height: 70vh;
     }
