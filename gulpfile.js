@@ -8,11 +8,10 @@ const uglify = require('gulp-uglify');
 
 // set folder structure for gulp to follow
 const paths = {
-    src: "src/**/*",
-    srcHTML: "src/**/*.html",
-    srcCSS: "src/**/*.css",
-    srcJS: "src/**/*.js",
-    srcAssets: "src/**/*",
+    srcHTML: ".html",
+    srcCSS: "css/**/*.css",
+    srcJS: "js/**/*.js",
+    srcAssets: "assets/**/*",
 
     tmp: "tmp",
     tmpIndex: "tmp/index.html",
