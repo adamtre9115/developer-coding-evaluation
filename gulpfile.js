@@ -8,10 +8,11 @@ const uglify = require('gulp-uglify');
 
 // set folder structure for gulp to follow
 const paths = {
-    srcHTML: ".html",
-    srcCSS: "css/**/*.css",
-    srcJS: "js/**/*.js",
-    srcAssets: "assets/**/*",
+    src: "src/**/*",
+    srcHTML: "src/**/*.html",
+    srcCSS: "src/**/*.css",
+    srcJS: "src/**/*.js",
+    srcAssets: "src/**/*",
 
     tmp: "tmp",
     tmpIndex: "tmp/index.html",
@@ -93,7 +94,7 @@ gulp.task('html:dist', function () {
   gulp.task('js:dist', function () {
     return gulp.src(paths.srcJS)
       .pipe(concat('script.min.js'))
-      .pipe(uglify())
+    //   .pipe(uglify())
       .pipe(gulp.dest(paths.dist));
   });
 
