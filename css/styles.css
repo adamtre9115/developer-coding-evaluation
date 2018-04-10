@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Effra";
-  src: url("..assets/fonts/Effra_Std_Bd.ttf") format("truetype"), url("..assets/fonts/Effra_Std_Lt.ttf") format("truetype"), url("../assets/fonts/Effra_Std_Md.ttf") format("truetype"), url("../assets/fonts/Effra_Std_Rg.ttf") format("truetype"); }
+  src: url("../assets/fonts/Effra_Std_Bd.ttf") format("truetype"), url("../assets/fonts/Effra_Std_Lt.ttf") format("truetype"), url("../assets/fonts/Effra_Std_Md.ttf") format("truetype"), url("../assets/fonts/Effra_Std_Rg.ttf") format("truetype"); }
 body {
   font-family: "Effra", "serif";
   line-height: 1.4;
@@ -12,7 +12,8 @@ body,
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-p, h3 {
+p,
+h3 {
   margin: 0;
   padding: 10px; }
 
@@ -100,7 +101,7 @@ a {
     padding: 0px;
     margin: 0;
     height: 80px;
-    min-width: 100%;
+    max-width: 100%;
     min-height: 100%;
     object-fit: contain; }
 
@@ -150,7 +151,7 @@ a {
   background-color: #fff;
   color: #0586d3;
   border: 1px solid #0586d3;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .fifth-third {
   background-image: url("../assets/images/pic-fifththird-bg.png");
@@ -180,7 +181,7 @@ a {
   color: #fff;
   background-color: #18203b;
   border: 1px solid #fff;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .chhn {
   background: url("../assets/images/pic-chhn-bg.png");
@@ -236,10 +237,32 @@ footer {
   text-align: center;
   font-size: 14px; }
   footer p {
-    font-size: .8rem; }
+    font-size: 0.8rem; }
   footer .logo {
     padding: 15px; }
 
+@media (max-width: 640px) and (orientation: landscape) {
+  #head {
+    height: 60vh; }
+
+  #clients .shift-up {
+    margin-top: -15%; }
+
+  .pg-inner,
+  .inner-detail,
+  .fifth-inner {
+    text-align: center; }
+
+  .pg-image {
+    width: 50%;
+    margin: auto; }
+
+  .fifth-third .fifth-image {
+    width: 60%; }
+
+  .chhn .chhn-image {
+    margin: 0% 46%;
+    width: 60%; } }
 @media (min-width: 768px) {
   .container {
     max-width: 720px; }
@@ -341,7 +364,7 @@ footer {
     padding-left: 10px; }
 
   .details p {
-    line-height: .7; }
+    line-height: 0.7; }
 
   #contact iframe {
     display: initial;
@@ -358,6 +381,26 @@ footer {
 
   .logos {
     justify-self: end; } }
+@media (max-width: 823px) and (orientation: landscape) {
+  #head {
+    height: 70vh; }
+
+  .pg-image {
+    width: 90%; }
+
+  .inner-detail {
+    margin: 70px 0px; }
+
+  .chhn-image {
+    margin: -35px -15px;
+    transform: scale(1.2); }
+
+  .chhn .chhn-image {
+    margin: 0px 64px;
+    width: 90%; }
+
+  #client-detail .chhn-detail {
+    margin-top: 5%; } }
 @media (min-width: 992px) {
   .container {
     max-width: 960px; }
